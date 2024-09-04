@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="Module02Exercise01.Resources.Styles.WindowsResources">
+
+    <!-- Colors -->
+    <Color x:Key="PrimaryColor">#CDC2A5</Color>
+    <Color x:Key="SecondaryColor">#295F98</Color>
+    <Color x:Key="AccentColor">#FF5722</Color>
+    <Color x:Key="BackgroundColor">#F0F0F0</Color>
+    <Color x:Key="TextColor">#333333</Color>
+
+    <!-- Font Families -->
+    <x:String x:Key="PrimaryFontFamily">Arial</x:String>
+    <x:String x:Key="SecondaryFontFamily">Calibri</x:String>
+
+    <!-- Styles -->
+    <Style TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+        <Setter Property="FontFamily" Value="{StaticResource PrimaryFontFamily}" />
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+
+    <Style TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="CornerRadius" Value="15" />
+        <Setter Property="FontFamily" Value="{StaticResource PrimaryFontFamily}" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Padding" Value="10,5" />
+        <Setter Property="HeightRequest" Value="50" />
+        <Setter Property="WidthRequest" Value="200" />
+    </Style>
+
+</ResourceDictionary>

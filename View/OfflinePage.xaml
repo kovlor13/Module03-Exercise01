@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module02Exercise01.View.OfflinePage"
+             Title="OfflinePage"
+             BackgroundColor="{DynamicResource PrimaryColor}">
+
+    <VerticalStackLayout Spacing="20" Padding="30">
+        <Label 
+            Text="Please Turn On Your WiFi"
+            FontSize="28"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontFamily="{DynamicResource PrimaryFontFamily}"/>
+
+        <Label 
+            Text="No WiFi Detected"
+            FontSize="28"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontFamily="{DynamicResource PrimaryFontFamily}"/>
+    </VerticalStackLayout>
+</ContentPage>

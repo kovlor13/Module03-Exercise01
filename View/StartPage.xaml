@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module02Exercise01.View.StartPage"
+             Title="Login"
+             BackgroundColor="{DynamicResource SecondaryColor}">
+    <!-- Green background -->
+
+    <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <!-- Rounded Container with White Background, Shadow, and Border -->
+        <Frame BackgroundColor="White"
+               CornerRadius="30"
+               HasShadow="True"
+               Margin="20"
+               BorderColor="{DynamicResource SecondaryColor}"
+               AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.9, 0.7"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional">
+
+      
+            <VerticalStackLayout Spacing="15" VerticalOptions="Center" HorizontalOptions="Center">
+     
+                <Frame BackgroundColor="LightSeaGreen"
+                       CornerRadius="10"
+                       HasShadow="True"
+                       BorderColor="DarkGreen"
+                       Margin="0,0,0,20"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center">
+                    <Label 
+                        Text="Login Page"
+                        FontSize="24"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        FontFamily="{DynamicResource PrimaryFontFamily}"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                </Frame>
+
+                <!-- Username Entry with Border -->
+                <Frame BackgroundColor="{DynamicResource BackgroundColor}"
+                       CornerRadius="10"
+                       BorderColor="DarkGray"
+                       HasShadow="False"
+                       Margin="0,0,0,15">
+                    <!-- Margin to create space around the entry -->
+                    <Entry 
+                        x:Name="UsernameEntry"
+                        Placeholder="Username"
+                        FontSize="18"
+                        TextColor="{DynamicResource TextColor}"
+                        FontFamily="{DynamicResource PrimaryFontFamily}"
+                        HeightRequest="40"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center"
+                        BackgroundColor="Transparent"/>
+                </Frame>
+
+                <!-- Password Entry with Border -->
+                <Frame BackgroundColor="{DynamicResource BackgroundColor}"
+                       CornerRadius="10"
+                       BorderColor="DarkGray"
+                       HasShadow="False"
+                       Margin="0,0,0,15">
+                    <!-- Margin to create space around the entry -->
+                    <Entry 
+                        x:Name="PasswordEntry"
+                        Placeholder="Password"
+                        IsPassword="True"
+                        FontSize="18"
+                        TextColor="{DynamicResource TextColor}"
+                        FontFamily="{DynamicResource PrimaryFontFamily}"
+                        HeightRequest="40"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center"
+                        BackgroundColor="Transparent"/>
+                </Frame>
+
+                <!-- Login Button with Rounded Corners -->
+                <Button 
+                    Text="Sign Up"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    Clicked="LoginButton_Clicked"
+                    FontAttributes="Bold"
+                    BackgroundColor="{DynamicResource SecondaryColor}"
+                    TextColor="White"
+                    FontFamily="{DynamicResource PrimaryFontFamily}"
+                    HeightRequest="50"
+                    WidthRequest="200"
+                    CornerRadius="25"
+                    BorderColor="DarkGreen"/>
+            </VerticalStackLayout>
+        </Frame>
+    </AbsoluteLayout>
+</ContentPage>

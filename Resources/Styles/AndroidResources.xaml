@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="Module02Exercise01.Resources.Styles.AndroidResources">
+
+    <!-- Define Primary and Secondary Colors -->
+    <Color x:Key="PrimaryColor">#F5F5F5</Color>
+    <Color x:Key="SecondaryColor">#48CFCB</Color>
+
+    <!-- Define Primary Font Family -->
+    <OnPlatform x:TypeArguments="x:String" x:Key="PrimaryFontFamily">
+        <On Platform="Android" Value="Roboto" />
+    </OnPlatform>
+
+    <!-- Define Common Styles -->
+    <Style x:Key="EntryStyle" TargetType="Entry">
+        <Setter Property="FontFamily" Value="{StaticResource PrimaryFontFamily}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="HeightRequest" Value="50" />
+        <Setter Property="Margin" Value="0,0,0,15"/>
+        
+    </Style>
+
+    <Style x:Key="ButtonStyle" TargetType="Button">
+        <Setter Property="FontFamily" Value="{StaticResource PrimaryFontFamily}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource SecondaryColor}" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="CornerRadius" Value="25" />
+        <Setter Property="HeightRequest" Value="50" />
+        <Setter Property="WidthRequest" Value="200" />
+        <Setter Property="Padding" Value="10,5"/>
+        <Setter Property="FontSize" Value="18" />
+    </Style>
+
+</ResourceDictionary>
